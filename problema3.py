@@ -21,9 +21,7 @@ def insertaEnArbolTrinario(arbol, numero):
     elif numero > arbol[0]:
         insertaEnArbolTrinario(arbol[3], numero)
     else:
-        if not isinstance(arbol[2], list):
-            arbol[2] = [arbol[2]]
-        arbol[2].append(numero)
+        insertaEnArbolTrinario(arbol[2],numero)
 
 
 t = input().split()
