@@ -7,6 +7,9 @@
 #         20 90 hola jiji 77
 #La salida debe ser
 #         (77, 'jiji', 'hola', 90, 20)
-l = input().split()
-t = tuple(reversed(l))
-print(t)
+lista = input().split()
+for i in range(0,len(lista)):
+    if lista[i].isdigit():
+        lista[i]=int(lista[i])
+
+print(tuple(reversed(lista)))
