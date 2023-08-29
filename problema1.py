@@ -9,10 +9,13 @@
 #		  mundo 44
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
-l = input().split()
-l2 = input().split()
+lista1 = input().split()
+lista2 = input().split()
 
-t1 = tuple(i for i in l)
-t2 = tuple(i for i in l2)
+lista = lista2+lista1+lista2
 
-print(t2+t1+t2)
+for i in range(0,len(lista)):
+    if lista[i].isdigit():
+        lista[i]=int(lista[i])
+
+print(tuple(lista))
